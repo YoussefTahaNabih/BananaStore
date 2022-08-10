@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:app/presentation/main/pages/home/view/home_page.dart';
+import 'package:app/presentation/main/pages/myAccount/my_account.dart';
 import 'package:app/presentation/main/pages/notifications/notif_page.dart';
 import 'package:app/presentation/main/pages/search/search_page.dart';
-import 'package:app/presentation/main/pages/settings/settings_page.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -23,13 +23,13 @@ class _MainViewState extends State<MainView> {
     const HomePage(),
     const SearchPage(),
     const NotificationPage(),
-    const SettingsPage()
+    const MyAccountPage()
   ];
   List<String> titles = [
     AppStrings.home.tr(),
     AppStrings.search.tr(),
     AppStrings.notifications.tr(),
-    AppStrings.settings.tr(),
+    AppStrings.myAccount.tr(),
   ];
 
   var _title = AppStrings.home.tr();
